@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2"
-  }
+  },
+  "name": "myyoga-pod6",
+  "version": "1.0.0",
+  "main": "scrolling.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssrijasdaruk/myYoga-POD6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssrijasdaruk/myYoga-POD6/issues"
+  },
+  "homepage": "https://github.com/ssrijasdaruk/myYoga-POD6#readme",
+  "description": ""
 }

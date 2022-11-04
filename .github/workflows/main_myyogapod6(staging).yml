@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - myYogaPOD6
+name: Build and deploy Node.js app to Azure Web App - myyogapod6
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -50,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'myYogaPOD6'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9209E92E911D49BF884D90ECD1D12ED4 }}
+          app-name: 'myyogapod6'
+          slot-name: 'staging'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2267FA50F8942A4A9A8626E48F136EF }}
           package: .
